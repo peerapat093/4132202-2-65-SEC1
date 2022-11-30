@@ -1,0 +1,9 @@
+version: '3'
+services:
+  php-apache:
+    container_name: php-apache
+    image: tomsik68/xampp:7
+    volumes:
+      - ./php:/www
+    ports:
+      - 8000:80
